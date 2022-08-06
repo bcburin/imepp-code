@@ -16,9 +16,9 @@ int main(int argc, char const **argv) {
     // Read elements
     for (int i = 0; i != n; ++i) std::cin >> L[i];
     // Calculate number of possible scalene triangles
-    for (int i = 0; i <= n; ++i)
-        for (int j = i + 1; j <= n; ++j)
-            for (int k = j + 1; k <= n; ++k)
+    for (int i = 0; i < n; ++i)
+        for (int j = i + 1; j < n; ++j)
+            for (int k = j + 1; k < n; ++k)
                 if (is_scalene_triangle(L[i], L[j], L[k])) ++ans;
     // Print result
     std::cout << ans << std::endl;
