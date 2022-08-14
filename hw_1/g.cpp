@@ -4,7 +4,7 @@ using namespace std;
 int bsearch(vector<int> v, int target) {
     int l = 0, r = v.size() - 1, pos = -1;
     while (l < r) {
-        int m = ((r - l) >> 2) + l;
+        int m = ((r - l) >> 1) + l;
         if (v[m] < target)
             l = m + 1;
         else {
