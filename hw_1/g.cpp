@@ -24,8 +24,7 @@ int main(int argc, char** argv) {
     for (auto& el : v) cin >> el;
     while (t--) {
         cin >> test;
-        // auto ans = bsearch(v, test);
-        auto ans = binary_search(v.begin(), v.end(), test);
+        auto ans = bsearch(v, test);
         cout << ans << endl;
     }
     return 0;
